@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+body{
+    background: linear-gradient(90deg, #a2c2e2, #f7c9d4);
+}
+.header{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin-top: 10px;
+}
+.baslik{
+    flex: 0 0 45%; 
+    display: flex;
+    justify-content: center; 
+    background-color: rgb(0,0,0,0.8);
+    background: linear-gradient(45deg, #95a2b6, #102a4c);
+    color: white;
+    border-radius: 50px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+}
+.question{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #102a4c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button#onerbutton:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+button#onerbutton:active {
+    background-color: #003f7f; 
+    transform: scale(0.98); 
+}
+
+input{
+    border-radius: 10px;
+    width: 200px;
+    padding: 2px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+input[type="text"]:focus {
+    border-color: #007BFF; 
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.film-item {
+    width: 150px; 
+    text-align: center; 
+    margin: 10px;
+}
+.film-item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.film-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.recomfilmlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box2filmitem{
+    background-color: red;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+
+    .box2{
+        flex-direction: column;
+    }
+    .film-item {
+        width: 80px;
+    }
+
+}
